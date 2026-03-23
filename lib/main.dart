@@ -434,40 +434,6 @@ class _SimulatorHomeState extends State<SimulatorHome>
                             child: MouseRegion(
                               cursor: SystemMouseCursors.click,
                               child: GestureDetector(
-                                onTap: () => _applyRandomDarkTheme(),
-                                child: Container(
-                                  width: double.infinity,
-                                  padding:
-                                      const EdgeInsets.symmetric(vertical: 12),
-                                  decoration: BoxDecoration(
-                                    color: const Color(0xFF1E1E1E),
-                                    border: Border.all(color: Colors.white),
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: const [
-                                      Icon(Icons.auto_awesome,
-                                          size: 14, color: Colors.white),
-                                      SizedBox(width: 8),
-                                      Text('Dark Theme',
-                                          style: TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white)),
-                                    ],
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        const SizedBox(width: 16),
-                        Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.only(bottom: 16),
-                            child: MouseRegion(
-                              cursor: SystemMouseCursors.click,
-                              child: GestureDetector(
                                 onTap: () => _applyRandomLightTheme(),
                                 child: Container(
                                   width: double.infinity,
@@ -489,6 +455,40 @@ class _SimulatorHomeState extends State<SimulatorHome>
                                           style: TextStyle(
                                               fontSize: 20,
                                               color: Colors.black87)),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        const SizedBox(width: 16),
+                        Expanded(
+                          child: Padding(
+                            padding: const EdgeInsets.only(bottom: 16),
+                            child: MouseRegion(
+                              cursor: SystemMouseCursors.click,
+                              child: GestureDetector(
+                                onTap: () => _applyRandomDarkTheme(),
+                                child: Container(
+                                  width: double.infinity,
+                                  padding:
+                                      const EdgeInsets.symmetric(vertical: 12),
+                                  decoration: BoxDecoration(
+                                    color: const Color(0xFF1E1E1E),
+                                    border: Border.all(color: Colors.white),
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  child: Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: const [
+                                      Icon(Icons.auto_awesome,
+                                          size: 14, color: Colors.white),
+                                      SizedBox(width: 8),
+                                      Text('Dark Theme',
+                                          style: TextStyle(
+                                              fontSize: 20,
+                                              color: Colors.white)),
                                     ],
                                   ),
                                 ),
