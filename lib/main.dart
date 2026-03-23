@@ -270,11 +270,12 @@ class _SimulatorHomeState extends State<SimulatorHome>
                                 ),
                                 const SizedBox(width: 16),
                                 GestureDetector(
-                                  onTap: () {
-                                    setState(() {
-                                      _isDarkMode = !_isDarkMode;
-                                    });
-                                  },
+                                  // onTap: () {
+                                  //   setState(() {
+                                  //     _isDarkMode = !_isDarkMode;
+                                  //   });
+                                  // },
+                                  onTap: null,
                                   child: Container(
                                     width: 80,
                                     height: 40,
